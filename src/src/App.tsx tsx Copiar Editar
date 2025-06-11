@@ -1,0 +1,31 @@
+import React from 'react';
+import Card from './components/Card';
+import Counter from './components/Counter';
+import ItemList from './components/ItemList';
+import Login from './components/Login';
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1>Exemplos com React e TypeScript</h1>
+
+      <h2>Componente de Contador</h2>
+      <Counter />
+
+      <h2>Componente de Login</h2>
+      <Login />
+
+      <h2>Componente de Lista de Itens</h2>
+      <ItemList />
+
+      <h2>Componente de Card</h2>
+      <Card
+        title="Card Exemplo"
+        description="Este é um exemplo de card com props!"
+        imageUrl="https://via.placeholder.com/150"
+      />
+    </div>
+  );
+};
+
+export default App;
